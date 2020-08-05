@@ -54,4 +54,4 @@ def main():
       return flask.render_template('positive.html', movie_names=names, movie_years=year, movie_scores=score, movie_languages=lang, search_name=m_name)
 
 if __name__ == '__main__':
-  app.run()
+  app.run(debug=True)
