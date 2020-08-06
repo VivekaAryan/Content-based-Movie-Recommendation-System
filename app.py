@@ -21,13 +21,12 @@ df['Score'] = df['Score'].round(decimals=2)
 count = CountVectorizer(stop_words='english')
 count_matrix = count.fit_transform(df['soup'])
 
-cosine_sim = cosine_similarity(count_matrix, count_matrix)
-
 df = df.reset_index()
 indices = pd.Series(df.index, index=df['Title'])
 all_titles = [df['Title'][i] for i in range(len(df['Title']))]
 
 def get_recommendations(title, cosine_sim = cosine_sim):
+  cosine_sim = cosine_similarity(count_matrix, count_matrix)
   idx = indices[title]
   sim_scores = list(enumerate(cosine_sim[idx]))
   sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
