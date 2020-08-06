@@ -25,7 +25,7 @@ df = df.reset_index()
 indices = pd.Series(df.index, index=df['Title'])
 all_titles = [df['Title'][i] for i in range(len(df['Title']))]
 
-def get_recommendations(title, cosine_sim = cosine_sim):
+def get_recommendations(title):
   cosine_sim = cosine_similarity(count_matrix, count_matrix)
   idx = indices[title]
   sim_scores = list(enumerate(cosine_sim[idx]))
