@@ -9,6 +9,7 @@ Original file is located at
 
 import numpy as np
 import pandas as pd
+import flask
 from flask import Flask, render_template, request
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
