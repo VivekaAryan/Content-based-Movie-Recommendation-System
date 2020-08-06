@@ -51,13 +51,15 @@ def main():
       result = get_recommendations(m_name)
       names = []
       year = []
+      score = []
       lang = []
       for i in range(len(result)):
         names.append(result.iloc[i][0])
         year.append(result.iloc[i][1])
+        score.append(result.iloc[i][2])
         lang.append(result.iloc[i][3])
 
-      return flask.render_template('positive.html', movie_names=names, movie_years=year, movie_languages=lang, search_name=m_name)
+      return flask.render_template('positive.html', movie_names=names, movie_years=year, movie_scores=score, movie_languages=lang, search_name=m_name)
 
 if __name__ == '__main__':
   app.run(debug=True)
