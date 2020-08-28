@@ -10,10 +10,10 @@ This content based model recommends top 10 similar movies arranged in the descen
 
 Link to the web app: https://cb-movierecommendations.herokuapp.com/
 
-# Data
+## Data
 The data was taken from https://grouplens.org/datasets/movielens/.
 
-# Weighted Rating Formula
+## Weighted Rating Formula
 The IMDB weighted rating formula is used as 'Score' to regularize the the rating metric.
 
 ![IMDB Score](https://wikimedia.org/api/rest_v1/media/math/render/svg/066fb66cb005a83525f3c219266fababaa26f968)
