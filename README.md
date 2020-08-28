@@ -9,3 +9,6 @@
 This content based model recommends top 10 similar movies arranged in the descending order of weighted scores, based on a particular movie. This system uses movie metadata, such as genre, director, keywords, actors for movies, to make these recommendations. 
 
 Link to the web app: https://cb-movierecommendations.herokuapp.com/
+
+# Data
+The data was taken from https://grouplens.org/datasets/movielens/ .
