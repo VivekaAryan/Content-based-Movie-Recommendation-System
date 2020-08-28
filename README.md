@@ -30,5 +30,6 @@ C  = the mean vote across the whole report (currently 6.0)
 
 ## Cosine Similarity  
 To get the recommendations, I computed pairwise cosine similarity scores for all movies based on their plot descriptions and recommended movies based on that similarity score threshold.  
-The definition of similarity between two vectors u and v is, in fact, the ratio between their dot product and the product of their magnitudes. The cosine similarity is advantageous because even if the two similar documents are far apart by the Euclidean distance (due to the size of the document), chances are they may still be oriented closer together. The smaller the angle, higher the cosine similarity.  
+The definition of similarity between two vectors u and v is, in fact, the ratio between their dot product and the product of their magnitudes. The cosine similarity is advantageous because even if the two similar documents are far apart by the Euclidean distance (due to the size of the document), chances are they may still be oriented closer together. The smaller the angle, higher the cosine similarity. 
+By applying the definition of similarity, this will be in fact equal to 1 if the two vectors are identical, and it will be 0 if the two are orthogonal. In other words, the similarity is a number bounded between 0 and 1 that tells us how much the two vectors are similar.  
 ![Cosine](https://miro.medium.com/max/700/1*r5ULMbx7ju3_Y4TU1PJIyQ.png)
