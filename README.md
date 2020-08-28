@@ -17,3 +17,10 @@ The data was taken from https://grouplens.org/datasets/movielens/.
 The IMDB weighted rating formula is used as 'Score' to regularize the the rating metric.
 
 ![IMDB Score](https://wikimedia.org/api/rest_v1/media/math/render/svg/066fb66cb005a83525f3c219266fababaa26f968)
+
+where:  
+W  = weighted rating  
+R = average for the movie as a number from 1 to 10 (mean) = (Rating)  
+v  = number of votes for the movie = (votes)  
+m  = minimum votes required to be listed (currently 78)  
+C  = the mean vote across the whole report (currently 6.0)  
